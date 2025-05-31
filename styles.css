@@ -6,4 +6,23 @@
 
 body {
     display: flex;
+    flex-direction: column;
+}
+
+a, ul, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header, .links {
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    gap: 1.5rem;
 }
