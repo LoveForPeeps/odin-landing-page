@@ -27,18 +27,37 @@ a, ul, li {
     color: var(--secondary-text);
 }
 
-.header, .links {
+.header, .links, .hero {
     display: flex;
+    background-color: var(--dark-color);
+    color: var(--main-text);
+}
+
+.subtext {
+    color: var(--secondary-text)
 }
 
 .header {
     justify-content: space-between;
     align-items: center;
+}
 
-    background-color: var(--dark-color);
-    color: var(--main-text);
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero {
+    padding: 7rem 15%;
+    gap: 1rem;
 }
 
 .links {
     gap: 1rem;
+}
+
+#hero-image{
+    background-color: var(--secondary-text);
+    flex-basis: 65%;
 }
