@@ -131,3 +131,29 @@ button {
     text-align: right;
 }
 
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--accent-color);
+    padding: 2.5rem 8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    border-radius: 12px;
+}
+
+.card p {
+    font-weight: 300;
+}
+
+.card > button {
+    align-self: center;
+    outline: 2px solid white;
+}
