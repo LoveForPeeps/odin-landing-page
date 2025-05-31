@@ -17,6 +17,10 @@ body {
     flex-direction: column;
 }
 
+body > * {
+    padding: 1rem 15%;
+}
+
 a, ul, li {
     text-decoration: none;
     list-style-type: none;
@@ -28,8 +32,6 @@ a, ul, li {
 }
 
 .header {
-    padding: 1rem;
-
     justify-content: space-between;
     align-items: center;
 
