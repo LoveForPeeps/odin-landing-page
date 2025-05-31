@@ -57,6 +57,7 @@ button {
     color: var(--main-color);
 }
 
+
 .maintext {
     color: var(--main-color);
 }
@@ -131,7 +132,7 @@ button {
     text-align: right;
 }
 
-.call-to-action {
+.call-to-action, footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,4 +157,8 @@ button {
 .card > button {
     align-self: center;
     outline: 2px solid white;
+}
+
+footer {
+    background-color: var(--dark-color);
 }
