@@ -33,6 +33,11 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
 button {
     background-color: var(--accent-color);
     color: var(--main-color);
@@ -46,7 +51,7 @@ button {
     cursor: pointer;
 }
 
-.header, .links, .hero {
+.header, .links, #hero {
     display: flex;
     background-color: var(--dark-color);
     color: var(--main-color);
@@ -64,19 +69,23 @@ button {
 .content {
     display: flex;
     flex-direction: column;
+}
+
+.content, .links{
     gap: 1rem;
 }
 
-.hero {
+#hero {
     padding: 7rem 15%;
     gap: 3rem;
-}
-
-.links {
-    gap: 1rem;
 }
 
 #hero-image{
     background-color: var(--secondary-color);
     flex-basis: 65%;
+}
+
+.information {
+    display: flex;
+    color: var(--dark-color);
 }
