@@ -8,8 +8,9 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
     --dark-color: #1F2937;
-    --main-text: #F9FAF8;
-    --secondary-text: #E5E7EB;
+    --main-color: #F9FAF8;
+    --secondary-color: #E5E7EB;
+    --accent-color: #3882F6;
 }
 
 body {
@@ -24,17 +25,35 @@ body > * {
 a, ul, li {
     text-decoration: none;
     list-style-type: none;
-    color: var(--secondary-text);
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-size: 1.2rem;
+
+    padding: .5rem 1.5rem;
+    border-radius: 8px;
+    align-self: flex-start;
+
+    border: none;
+    cursor: pointer;
 }
 
 .header, .links, .hero {
     display: flex;
     background-color: var(--dark-color);
-    color: var(--main-text);
+    color: var(--main-color);
 }
 
 .subtext {
-    color: var(--secondary-text)
+    color: var(--secondary-color)
 }
 
 .header {
@@ -50,7 +69,7 @@ a, ul, li {
 
 .hero {
     padding: 7rem 15%;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .links {
@@ -58,6 +77,6 @@ a, ul, li {
 }
 
 #hero-image{
-    background-color: var(--secondary-text);
+    background-color: var(--secondary-color);
     flex-basis: 65%;
 }
